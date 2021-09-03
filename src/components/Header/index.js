@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <div className="header">
       <a href="#" className="header__title">MyMarketPlace</a>
-      <ul>
-        <li><NavLink exact to='/'>Objets à vendre</NavLink></li>
-        <li><NavLink exact to='/'>Vendre un objet</NavLink></li>
-        <li><NavLink exact to='/'>Connection</NavLink></li>
+      <ul className="header__nav">
+        <li className="header__nav__item"><NavLink activeClassName="header__selected" exact to='/'>Objets à vendre</NavLink></li>
+        <li className="header__nav__item"><NavLink activeClassName="header__selected" exact to='/a'>Vendre un objet</NavLink></li>
+        <li className="header__nav__item"><NavLink activeClassName="header__selected" exact to='/z'>Connection</NavLink></li>
       </ul>
-
+      <a className="header__back" href="#"> Retour</a>
     </div>
   )
 }
