@@ -15,11 +15,12 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(vars.$header-color, 0.4);
+    background-color: rgba(vars.$header-color, 0.6);
     z-index: 10;
   }
   &__image{
-    position: relative;
+    position: absolute;
+    width: 100%;
   }
   &__title{
     position: absolute;

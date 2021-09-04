@@ -7,9 +7,9 @@ const Banner = () => {
   return (
     <div className="banner">
       <img className="banner__image" src={bannerImg} alt="champ de fleurs" />
-      <h1 className="banner__title">Venez vendre vos objets</h1>
+      <h1 className="banner__title">Venez vendre <br />vos objets</h1>
     </div>
-  )
+  );
 };
 
 export default Banner;
