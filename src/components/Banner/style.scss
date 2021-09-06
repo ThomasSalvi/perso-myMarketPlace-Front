@@ -24,9 +24,10 @@
   }
   &__title{
     position: absolute;
-    color: vars.$header-text;
+    color: vars.$selected-color;
     z-index: 100;
     font-family: vars.$first-font;
     font-size: vars.$large-text;
+    font-weight: 500;
   }
 }
