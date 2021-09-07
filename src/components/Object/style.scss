@@ -1,0 +1,41 @@
+@use 'src/styles/vars';
+
+.object{
+  width: 250px;
+  height: 300px;
+  background-color: red;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+  &:hover{
+    transform: scale(1.05);
+  }
+  &__description{
+    position: absolute;
+    padding: 1rem 2rem;
+    background-color: rgba(black,0.65);
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  &__title{
+    color: vars.$selected-color;
+    font-size: vars.$large-text;
+    font-family: vars.$first-font;
+  }
+  &__price{
+    margin-top: 1rem;
+    color: vars.$header-text;
+    font-size: vars.$medium-text;
+    font-family: vars.$first-font;
+  }
+}

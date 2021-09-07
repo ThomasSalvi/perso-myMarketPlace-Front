@@ -2,22 +2,36 @@ export const initialState = {
   allObjects: [
     {
       description: "test",
-      imageUrl: "http://www.mandysam.com/img/random.jpg",
+      imageUrl: "https://picsum.photos/400/300",
       price: 90,
       title: "titre",
       userId: "770"
     },
     {
       description: "test",
-      imageUrl: "http://www.mandysam.com/img/random.jpg",
-      price: 90,
+      imageUrl: "https://picsum.photos/400/300",
+      price: 50,
       title: "titre",
       userId: "770"
     },
     {
       description: "test",
-      imageUrl: "http://www.mandysam.com/img/random.jpg",
-      price: 90,
+      imageUrl: "https://picsum.photos/400/300",
+      price: 60,
+      title: "titre",
+      userId: "770"
+    },
+    {
+      description: "test",
+      imageUrl: "https://picsum.photos/400/300",
+      price: 35,
+      title: "titre",
+      userId: "770"
+    },
+    {
+      description: "test",
+      imageUrl: "https://picsum.photos/400/300",
+      price: 22,
       title: "titre",
       userId: "770"
     },
