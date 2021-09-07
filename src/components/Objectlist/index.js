@@ -7,7 +7,7 @@ const Objectlist = ({ objects }) => {
   return (
     <div className="objectList">
       {objects.map((object) => { 
-        return (<Object title={object.title} price={object.price} imageUrl={object.imageUrl}/>)
+        return (<Object title={object.title} price={object.price} imageUrl={object.imageUrl} objectId={object.objectId}/>)
       })}
     </div>
   );

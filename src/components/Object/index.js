@@ -1,11 +1,11 @@
 import React from 'react';
-import imgTest from 'src/assets/images/banner.jpg';
+import { NavLink } from 'react-router-dom';
 import './style.scss';
 
-const Object = ({ title, price, imageUrl }) => {
+const Object = ({ title, price, imageUrl, objectId }) => {
   const toto = 'toto';
   return (
-      <a href="#">
+      <NavLink exact to={`/object/${objectId}`} >
         <div className="object">
           <img src={imageUrl} alt=""/>
           <div className="object__description">
@@ -13,7 +13,7 @@ const Object = ({ title, price, imageUrl }) => {
             <p className="object__price">{`${price}€`}</p>
           </div>
         </div>
-      </a>
+      </NavLink>
   );
 };
 
