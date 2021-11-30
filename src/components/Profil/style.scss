@@ -1,0 +1,101 @@
+.profil{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__span{
+    font-weight: bold;
+  }
+  &__edit{
+    position: absolute;
+    top: 110px;
+    width: 80%;
+    height: 500px;
+    background-color: rgb(238, 238, 238);
+    z-index: 100;
+    border: 2px solid black;
+    border-radius: 8px;
+    & label{
+      margin: 0.3rem;
+      height: 40px;
+    }
+    & input{
+      margin: 1rem;
+      height: 40px;
+      padding: 1rem;
+      border: 1px solid grey;
+      border-radius: 0 8px 8px 0;
+    }
+    &-close{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: black;
+      font-size: 2rem;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  &__title{
+    margin-top: 1rem;
+  }
+  &__info{
+    width: 80%;
+    height: 130px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+  }
+  &__object{
+    width: 80%;
+    margin: 1rem;
+    //border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    &__wrapper{
+      position: relative;
+      border-top: 1px solid black;
+    }
+  }
+  &__delete{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0px;
+    right: 0px;
+    padding: 1rem;
+    height: 100%;
+    &__button{
+      padding: 0.3rem 0.7rem;
+      color: white;
+      border-color: transparent;
+      border-radius: 5px;
+      &-edit{
+        background-color: #ffc107;
+        &:hover{
+          background:darken(#ffc107, 10%);
+        }
+      }
+      &-delete{
+        background-color: #dc3545;
+        &:hover{
+          background:darken(#dc3545, 10%);
+        }
+      }
+      &-show{
+        background-color: #239e65;
+        &:hover{
+          background:darken(#239e65, 10%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use 'src/styles/vars';
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: vars.$medium-gutter 0;
+  background-color: vars.$header-color;
+  color: vars.$header-text;
+  font-family: vars.$first-font, sans-serif;
+  position: relative;
+  &__title{
+    font-size: vars.$large-text;
+  }
+  &__nav{
+    display: flex;
+    &__item{
+      font-size: vars.$medium-text;
+      padding: 0 vars.$small-gutter;
+      & a{
+        padding: vars.$small-gutter;
+      }
+    }
+  }
+  &__back{
+    font-size: vars.$medium-text;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__selected{
+    background-color: vars.$selected-color;
+  }
+  &__submenu{
+    position: absolute;
+    top: 72px;
+    width: 200px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    &__item{
+      color: vars.$header-text;
+      padding: 1rem;
+      background-color: rgba(black, 0.5);
+      &:hover{
+        cursor: pointer;
+      }
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}

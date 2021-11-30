@@ -1,0 +1,60 @@
+@use 'src/styles/vars';
+
+.oneObject{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 1000px;
+  overflow: hidden;
+  margin: 2rem auto;
+  align-items: start;
+  font-family: vars.$first-font;
+  &__image{
+    width: 100%;
+    margin-bottom: 1rem;
+    &__wrapper{
+      position: relative;
+      width: 100%;
+    }
+    &__owner{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(rgb(235, 90, 90), 0.9);
+      color: white;
+      padding: 0.3rem;
+      border-radius: 0 0 0 8px;
+    }
+  }
+  &__title{
+    margin: 0.5rem 0;
+    font-size: 1.7rem;
+  }
+  &__desc{
+    margin: 0.5rem 0;
+    width: 100%;
+    border-top: 1px solid grey;
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding: 1.3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    & span{
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+  }
+  &__price{
+    margin: 0.5rem 0;
+    font-size: vars.$medium-text;
+    color: vars.$selected-color;
+  }
+  &__delete{
+    background-color: rgb(194, 79, 79);
+    color: white;
+    padding: 0.33rem 0.66rem;
+    border-color: transparent;
+    border-radius: 8px;
+  }
+}
