@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Objectlist from 'src/components/Objectlist';
 
 const mapStateToProps = (state) => ({
-  objects: state.object.allObjects,
+  posts: state.user.posts,
 });
 
 const mapDispatchToProps = (dispatch) => ({

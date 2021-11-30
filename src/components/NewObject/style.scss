@@ -1,0 +1,41 @@
+.newObject{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid grey;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 2rem;
+  &__subtitle{
+    margin: 0.5rem;
+    font-weight: bold;
+  }
+  &__title{
+    padding: 0.5rem 0;
+    margin: 1rem 0 2rem 0;
+    font-size: 2rem;
+    border-bottom: 1px solid grey;
+  }
+  &__button{
+    padding: 1rem;
+    width: 200px;
+    margin-top: 1rem;
+    border-color: transparent;
+    background-color:#8EBF42;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    &:hover{
+      background-color:#7ba73a;
+    }
+  }
+  & input{
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 1rem;
+    width: 80%;
+    &:last-of-type{
+      background-color: #fff;
+    }
+  }
+}
